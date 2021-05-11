@@ -2,7 +2,9 @@ import { ajax } from "rxjs/ajax";
 import { fromEvent, Observable } from "rxjs";
 import { debounceTime, map, mergeAll, pluck } from "rxjs/operators";
 import { GithubUser } from "../interfaces/githubUser.interface";
-
+/**
+ * MergeAll:Por cada cada evento del source se subscribe y lo manda 
+ */
 const input = document.createElement("input");
 const orderedList = document.createElement("ol");
 document.body.append(input, orderedList);
